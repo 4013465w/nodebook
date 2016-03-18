@@ -11,12 +11,12 @@ router.map({
   '/news/:page': {
     component: Header
   }
-})
+});
 router.beforeEach(function () {
   window.scrollTo(0, 0)
-})
+});
 
-router.redirect({
-  '*': '/news/1'
-})
-router.start(Header, '#app')
+// router.redirect({
+//   '*': '/news/1'
+// });
+router.start(Header, 'body')

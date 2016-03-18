@@ -1,22 +1,15 @@
 <template>
-  <div id="wrapper">
-    <!-- header -->
-    <div id="header">
-      <a id="yc" href="http://www.ycombinator.com">
-        <img src="https://news.ycombinator.com/y18.gif">
-      </a>
-      <h1><a href="#/">Hacker News</a></h1>
-      <span class="source">
-        Built with <a href="http://vuejs.org" target="_blank">Vue.js</a> |
-        <a href="https://github.com/yyx990803/vue-hackernews" target="_blank">Source</a>
-      </span>
-    </div>
-    <!-- main view -->
-    <router-view
-      class="view"
-      keep-alive
-      transition
-      transition-mode="out-in">
-    </router-view>
-  </div>
+  <header>
+  	<a href=""></a>
+  	<a href=""></a>
+  	<h1>NodeBook</h1>
+  </header>
 </template>
+<style type="text/css">
+	header{
+		color: 
+	}
+</style>
+<script type="text/javascript">
+	// alert('dddddddddddd');
+</script>

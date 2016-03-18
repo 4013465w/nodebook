@@ -1,6 +1,8 @@
 
 var path = require('path');
 var HtmlwebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 //定义了一些文件夹的路径
 var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'src');
@@ -18,7 +20,8 @@ module.exports = {
   plugins: [
     new HtmlwebpackPlugin({
       title: 'NodeBook'
-    })
+    }),
+    new ExtractTextPlugin('app.css')
   ],
   module: {
       loaders: [
